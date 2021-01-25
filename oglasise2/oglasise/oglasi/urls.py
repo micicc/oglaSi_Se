@@ -1,6 +1,8 @@
 from django.urls import path
 from . import views
 
+app_name = 'oglasi_app'
+
 urlpatterns = [
-    path('', views.index, name='oglasi_index'),
+    path('', views.svi_oglasi, name='svi_oglasi'),
 ]

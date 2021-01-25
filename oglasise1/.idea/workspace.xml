@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f6ad48b7-a3b5-4a19-acd4-51e7d4c5f87c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/static/img/repairman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/static/img/toppic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/static/repairman.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/svi_oglasi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/templates/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/templates/master.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/oglasise/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasise/settings.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1nZshajRA4NlehLK6tLRSkAqanh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.22" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6ad48b7-a3b5-4a19-acd4-51e7d4c5f87c" name="Default Changelist" comment="" />
+      <created>1611609066419</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611609066419</updated>
+      <workItem from="1611609067484" duration="309000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
