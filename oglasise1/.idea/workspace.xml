@@ -20,22 +20,269 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6ad48b7-a3b5-4a19-acd4-51e7d4c5f87c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/static/img/repairman.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/static/img/toppic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/static/repairman.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/svi_oglasi.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/templates/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/templates/master.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/oglasise/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasise/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/15601769-78ef-4234-a529-5feea27a236b.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/15601769-78ef-4234-a529-5feea27a236b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/applyToDefaults.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/assert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/bench.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/block.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/clone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/contain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/deepEqual.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/escapeHeaderAttribute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/escapeHtml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/escapeJson.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/escapeRegex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/flatten.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/ignore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/intersect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/isPromise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/merge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/once.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/reach.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/reachTemplate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/stringify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/lib/wait.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/hoek/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/topo/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/topo/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/topo/lib/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/topo/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@hapi/topo/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/address/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/address/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/address/lib/decode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/address/lib/domain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/address/lib/email.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/address/lib/errors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/address/lib/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/address/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/address/lib/ip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/address/lib/tlds.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/address/lib/uri.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/address/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/formula/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/formula/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/formula/lib/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/formula/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/formula/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/pinpoint/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/pinpoint/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/pinpoint/lib/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/pinpoint/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@sideway/pinpoint/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bignumber.js/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bignumber.js/LICENCE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bignumber.js/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bignumber.js/doc/API.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bignumber.js/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/connect-history-api-fallback/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/connect-history-api-fallback/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/connect-history-api-fallback/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/connect-history-api-fallback/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/connect-history-api-fallback/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/core-util-is/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/core-util-is/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/core-util-is/float.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/core-util-is/lib/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/core-util-is/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/core-util-is/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/isarray/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/isarray/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/isarray/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/isarray/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/isarray/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/isarray/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/isarray/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/isarray/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/dist/joi-browser.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/annotate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/cache.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/compile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/errors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/extend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/manifest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/messages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/modify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/ref.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/schemas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/trace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/types/alternatives.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/types/any.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/types/array.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/types/binary.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/types/boolean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/types/date.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/types/function.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/types/keys.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/types/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/types/number.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/types/object.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/types/string.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/types/symbol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/validator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/lib/values.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/joi/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/Changes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/License" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/Connection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/ConnectionConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/Pool.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/PoolCluster.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/PoolConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/PoolConnection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/PoolNamespace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/PoolSelector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/Auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/BufferList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/PacketHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/PacketWriter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/Parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/Protocol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/ResultSet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/SqlString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/Timer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/charsets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/errors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/field_flags.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/server_status.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/ssl_profiles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/AuthSwitchRequestPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/AuthSwitchResponsePacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/ClientAuthenticationPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/ComChangeUserPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/ComPingPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/ComQueryPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/ComQuitPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/ComStatisticsPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/EmptyPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/EofPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/ErrorPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/Field.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/FieldPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/LocalDataFilePacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/LocalInfileRequestPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/OkPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/OldPasswordPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/ResultSetHeaderPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/RowDataPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/SSLRequestPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/StatisticsPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/UseOldPasswordPacket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/ChangeUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Handshake.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Ping.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Query.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Quit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Sequence.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Statistics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mysql/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/process-nextick-args/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/process-nextick-args/license.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/process-nextick-args/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/process-nextick-args/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/GOVERNANCE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/doc/wg-meetings/2015-01-30.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/duplex-browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/duplex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_duplex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_passthrough.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_readable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_transform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_writable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/internal/streams/BufferList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/internal/streams/destroy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/internal/streams/stream-browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/internal/streams/stream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/passthrough.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/readable-browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/readable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/transform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/writable-browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/readable-stream/writable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sqlstring/HISTORY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sqlstring/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sqlstring/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sqlstring/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sqlstring/lib/SqlString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sqlstring/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/string_decoder/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/string_decoder/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/string_decoder/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/string_decoder/lib/string_decoder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/string_decoder/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/util-deprecate/History.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/util-deprecate/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/util-deprecate/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/util-deprecate/browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/util-deprecate/node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/util-deprecate/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oglas/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oglas/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oglas/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oglas/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oglas/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oglas/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oglas/public/repairman.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oglas/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oglas/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oglas/src/components/zaglavlje.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oglas/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oglas/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oglas/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oglas/src/views/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/oglasi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -47,6 +294,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
@@ -54,6 +302,11 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\oglaSi_Se\oglasise1\oglas\public" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -63,7 +316,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611609066419</updated>
-      <workItem from="1611609067484" duration="309000" />
+      <workItem from="1611609067484" duration="13662000" />
     </task>
     <servers />
   </component>
@@ -80,5 +333,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611609777531">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611609777531" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611620661165">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611620661165" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1611614274175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611614274175" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1611614274175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611614274175" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1611614274175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611614274175" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1611614274175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611614274175" />
   </component>
 </project>
