@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import {mapActions} from 'vuex';
+import {mapActions} from 'vuex';
   import zaglavlje from "@/components/zaglavlje";
 
   export  default {
@@ -21,12 +21,14 @@
       zaglavlje
     },
     methods:{
-      ...mapActions(['load_oglasi','load_kategorije','load_komentari'])
+      ...mapActions(['load_oglasi','load_kategorije','load_komentari','load_users'])
     },
     mounted: function (){
       this.load_oglasi();
       this.load_kategorije();
       this.load_komentari();
+      this.load_users();
+
     }
   }
 </script>

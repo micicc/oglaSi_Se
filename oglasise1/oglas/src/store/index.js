@@ -7,7 +7,9 @@ export default new Vuex.Store({
   state: {
     oglasi: [],
     kategorije: [],
-    komentari: []
+    komentari: [],
+    users: [],
+    curent_user: 1,
   },
   mutations: {
     /////oglasi///////
@@ -68,7 +70,14 @@ export default new Vuex.Store({
         }
       }
     },
+    /////useri///
+    set_users: function (state,users){
+      state.users = users;
+    },
 
+    set_curent_user: function (state,curent_user){
+      state.curent_user = curent_user;
+    },
   },
 
 
@@ -253,6 +262,29 @@ export default new Vuex.Store({
           alert(error);
       });
     },
+
+    ///users///
+    load_users: function ({commit}){
+      fetch('http://localhost/apiUsr/users',{method: "get"}).then((resp)=>{
+        if(!resp.ok)
+          throw resp;
+        return resp.json();
+      }).then((jsonData) =>{
+        commit('set_users',jsonData);
+      }).catch((err)=>{
+        if (typeof err.text === 'function')
+          err.text().then((errorMessage) =>{
+            alert(errorMessage);
+          })
+        else
+          alert(err);
+      });
+    },
+
+
+
+
+
 
 
   },

@@ -2,6 +2,7 @@ const express = require('express');
 const og = require('./routes/oglasi');  // Nas ruter (REST API)
 const kt = require('./routes/kategorije');  // Nas ruter (REST API)
 const kom = require('./routes/komentari');  // Nas ruter (REST API)
+const usr = require('./routes/users');  // Nas ruter (REST API)
 const path = require('path');
 const history = require('connect-history-api-fallback');
 
@@ -17,6 +18,7 @@ app.use(function(req, res, next) {
 app.use('/apiO',og);
 app.use('/apiK',kt);
 app.use('/apiKom',kom);
+app.use('/apiUsr',usr);
 
 const staticMiddleware = express.static(path.join(__dirname, 'dist'));
 

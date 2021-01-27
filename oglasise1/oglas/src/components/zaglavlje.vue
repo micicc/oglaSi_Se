@@ -2,7 +2,7 @@
   <div>
     <div style="background-image: url('https://i.imgur.com/rZQhgGS.png');">
       <h1 style="text-align:left; color: #e8ce0c; font-size: 450%; padding-left: 20px; padding-top: 100px" > OglaSi_Se </h1>
-      <h1 style="text-align:left; color: #e5e1dc; font-size: 180%; padding-left: 20px; padding-bottom: 10px" > Najveća online platforma za oglašavanje uslužnih delatnosti. </h1>
+      <h1 style="text-align:left; color: #e5e1dc; font-size: 180%; padding-left: 20px; padding-bottom: 10px" > Najveća online platforma za oglašavanje zanatskih delatnosti. </h1>
     </div>
 
     <div>
@@ -14,6 +14,7 @@
                 <b>Svi oglasi</b>
             </b-nav-item>
             <b-nav-item style="font-size: 120%" href="/postavi_oglas" ><b>Postavi oglas</b></b-nav-item>
+            <b-nav-item v-if="curent_user!=null" style="font-size: 120%" href="/moji_oglasi" ><b>Moji oglasi</b></b-nav-item>
           </b-navbar-nav>
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
@@ -34,7 +35,7 @@
   export default {
     name: "zaglavlje",
       computed:{
-        ...mapState(['oglasi'])
+        ...mapState(['oglasi','curent_user'])
 
       },
   }

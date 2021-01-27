@@ -11,19 +11,19 @@ const pool = mysql.createPool({
 });
 
 const semaO = Joi.object().keys( {
-    naslov: Joi.string().required().trim().max(30),
-    opis: Joi.string().required().trim().max(120),
-    mesto: Joi.string().trim().required().max(30),
-    kategorija_id: Joi.number().required(),
-    korisnik_id: Joi.number().required(),
+    password: Joi.string().required().trim().max(30).min(8),
+    username: Joi.string().required().trim().max(30),
+    first_name: Joi.string().required().trim().max(30),
+    last_name: Joi.string().trim().required().max(30),
+    email: Joi.string().required(),
 });
 
 const  rtr = express.Router();
 rtr.use(express.json());
 
 //citanje svih
-rtr.get('/oglasi',((req, res) => {
-    pool.query('select * from oglasi_oglas',(err, rows)=>{
+rtr.get('/users',((req, res) => {
+    pool.query('select * from auth_user',(err, rows)=>{
         if(err)
             res.status(500).send(err.sqlMessage);
         else
@@ -32,8 +32,8 @@ rtr.get('/oglasi',((req, res) => {
 }));
 
 //citanje jednog
-rtr.get('/oglas/:id', ((req, res) => {
-    let query = 'select * from oglasi_oglas where id = ?';
+rtr.get('/user/:id', ((req, res) => {
+    let query = 'select * from auth_user where id = ?';
     let formated = mysql.format(query, [req.params.id]);
 
     pool.query(formated, (err,rows) => {
@@ -45,20 +45,20 @@ rtr.get('/oglas/:id', ((req, res) => {
 }));
 
 //dodavanje novog
-rtr.post('/oglasi', ((req, res) => {
+rtr.post('/users', ((req, res) => {
     let { error } = semaO.validate(req.body)
 
     if(error)
         res.status(400).send(error.details[0].message);
     else {
-        let query = 'insert into  oglasi_oglas (naslov, opis, mesto,kategorija_id, korisnik_id) values (?,?,?,?,?)';
-        let formated = mysql.format(query, [req.body.naslov, req.body.opis, req.body.mesto, req.body.kategorija_id, req.body.korisnik_id]);
+        let query = 'insert into  auth_user (password, username, first_name,last_name,email) values (?,?,?,?,?)';
+        let formated = mysql.format(query, [req.body.password, req.body.username, req.body.first_name, req.body.last_name, req.body.email]);
 
         pool.query(formated, (err,response)=>{
             if(err)
                 res.status(500).messages(err.sqlMessage);
             else {
-                query = 'select * from oglasi_oglas where id = ?';
+                query = 'select * from auth_user where id = ?';
                 formated = mysql.format(query, [response.insertId])
 
                 pool.query(formated, (err,rows) => {
@@ -73,19 +73,19 @@ rtr.post('/oglasi', ((req, res) => {
 }));
 
 //izmena
-rtr.put('/oglas/:id', (req, res) => {
+rtr.put('/users/:id', (req, res) => {
     let {error} = semaO.validate(req.body)
     if(error)
         res.status(400).send(error.details[0].message);
     else {
-        let query = 'update  oglasi_oglas set naslov=?, opis=?, mesto=?, kategorija_id=?, korisnik_id=? where id=?';
-        let formated = mysql.format(query, [req.body.naslov, req.body.opis, req.body.mesto, req.body.kategorija_id, req.body.korisnik_id, req.params.id]);
+        let query = 'update  auth_user set password=?, username=?, first_name=?, last_name=?, email=? where id=?';
+        let formated = mysql.format(query, [req.body.password, req.body.username, req.body.first_name, req.body.last_name, req.body.email, req.params.id]);
 
         pool.query(formated, (err,response)=>{
             if(err)
                 res.status(500).messages(err.sqlMessage);
             else {
-                query = 'select * from oglasi_oglas where id = ?';
+                query = 'select * from auth_user where id = ?';
                 formated = mysql.format(query, [req.params.id])
 
                 pool.query(formated, (err,rows) => {
@@ -100,15 +100,15 @@ rtr.put('/oglas/:id', (req, res) => {
 });
 
 //brisanje
-rtr.delete('/oglas/:id', ( req,res)=>{
-    let query = 'select * from oglasi_oglas where id = ?';
+rtr.delete('/user/:id', ( req,res)=>{
+    let query = 'select * from auth_user where id = ?';
     let formated = mysql.format(query, [req.params.id]);
 
     pool.query(formated, (err,rows)=>{
         if(err)
             res.status(500).messages(err.sqlMessage);
         else {
-            query = 'delete from oglasi_oglas where id = ?';
+            query = 'delete from auth_user where id = ?';
             formated = mysql.format(query, [req.params.id])
 
             pool.query(formated, (err,resp) => {
@@ -117,7 +117,6 @@ rtr.delete('/oglas/:id', ( req,res)=>{
                 else
                     res.send(rows[0]);
             })
-
         }
     });
 })

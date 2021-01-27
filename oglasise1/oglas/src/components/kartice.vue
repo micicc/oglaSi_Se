@@ -17,7 +17,7 @@
             {{oglas.opis}}
           </p>
           <div slot="footer">
-            <b-btn variant="primary" @click="detalji(oglas)" block>Detalji</b-btn>
+            <b-btn variant="primary" @click="detalji(oglas)" block>Details</b-btn>
           </div>
         </b-card>
       </b-card-group>

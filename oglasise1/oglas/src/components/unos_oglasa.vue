@@ -17,7 +17,7 @@
       <b-form-input v-model="nmesto" placeholder="mesto"  />
     </b-row>
     <b-row cols="2" align-h="center" >
-      <b-button variant="primary" @click="addNew">Sačuvaj</b-button>
+      <b-button variant="primary" @click="addNew">Save</b-button>
     </b-row>
 
   </b-container>
@@ -26,21 +26,18 @@
 </template>
 
 <script>
-import {mapActions, mapState} from 'vuex'
+  import {mapActions, mapState} from 'vuex'
   import router from "@/router";
 
   export default {
     computed: {
-      ...mapState(['kategorije']),
+      ...mapState(['kategorije', 'users', 'curent_user']),
     },
     name: "unos_oglasa",
     props:{
       oglas:{
 
       }
-    },
-    mounted() {
-
     },
     data(){
       return{
@@ -50,19 +47,28 @@ import {mapActions, mapState} from 'vuex'
         nkategorija: null,
       }
     },
+    mounted(){
+      if(this.$route.params.id){
+        this.nnaslov = this.oglas.naslov;
+        this.nkategorija=this.oglas.kategorija_id;
+        this.ntekst=this.oglas.opis;
+        this.nmesto=this.oglas.mesto;
+
+      }
+    },
     methods:{
-      ...mapActions(['new_oglas', 'change_oglas']),
+      ...mapActions(['new_oglas', 'change_oglas', ]),
 
       addNew:function (){
-        const ogl = JSON.stringify({naslov: this.nnaslov, opis: this.ntekst, mesto: this.nmesto, kategorija_id: this.nkategorija, korisnik_id: 1});
+        const ogl = JSON.stringify({naslov: this.nnaslov, opis: this.ntekst, mesto: this.nmesto, kategorija_id: this.nkategorija, korisnik_id: this.curent_user});
 
 
           if(!this.$route.params.id){
             this.new_oglas(ogl);
           }
           else {
-            this.change_meteor({id: this.$route.params.id, oglas: ogl});
-            router.push({path: `/`})
+            this.change_oglas({id: this.$route.params.id, oglas: ogl});
+            router.push({path: `/moji_oglasi`})
           }
 
 

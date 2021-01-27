@@ -20,25 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6ad48b7-a3b5-4a19-acd4-51e7d4c5f87c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/oglas/src/assets/repairman.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oglas/src/components/kartice.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oglas/src/components/unos_komentara.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oglas/src/components/unos_oglasa.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oglas/src/views/Oglas.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oglas/src/views/Postavi.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/kategorije.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/komentari.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oglas/src/views/IzmeniOglas.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oglas/src/views/MojiOglasi.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oglas/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oglas/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oglas/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oglas/src/components/kartice.vue" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/components/kartice.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oglas/src/components/unos_komentara.vue" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/components/unos_komentara.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oglas/src/components/unos_oglasa.vue" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/components/unos_oglasa.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oglas/src/components/zaglavlje.vue" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/components/zaglavlje.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oglas/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oglas/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oglas/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/templates/master.html" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/templates/master.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oglas/src/views/Oglas.vue" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/views/Oglas.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/oglasi.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/oglasi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
       </list>
     </option>
@@ -91,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611609066419</updated>
-      <workItem from="1611609067484" duration="52220000" />
+      <workItem from="1611609067484" duration="66717000" />
     </task>
     <servers />
   </component>
@@ -146,6 +141,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1535" y="101" width="1350" height="754" key="dock-window-3/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611759629458" />
+    <state x="-1785" y="-12" width="1350" height="841" maximized="true" key="dock-window-4" timestamp="1611777012977">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1785" y="-12" width="1350" height="841" maximized="true" key="dock-window-4/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611777012977" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1611711601306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

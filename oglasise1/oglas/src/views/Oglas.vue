@@ -7,7 +7,6 @@
         <b-card  img-src="https://i.imgur.com/R8Cjc1B.png" img-alt="Card image" img-right style="padding-bottom: 20px; text-align: left">
           <p class="card-text">
             <b><h1>{{oglas.naslov}}</h1></b>
-
           </p>
           <p class="card-text">
             <b>kategorija:</b>
@@ -38,6 +37,10 @@
 
         </b-card>
       </b-card-group>
+
+    </b-row>
+    <b-row>
+      <unos_komentara :oglas="oglas"/>
     </b-row>
 
 
@@ -49,12 +52,12 @@
 <script>
 
   import {mapState} from 'vuex';
-
+  import unos_komentara from "@/components/unos_komentara";
   //import router from "@/router";
   export default {
     name: "Oglas",
     components: {
-
+      unos_komentara,
     },
     data() {
       return {
@@ -62,7 +65,7 @@
       }
     },
     computed:{
-      ...mapState(['oglasi', 'kategorije', 'komentari']),
+      ...mapState(['oglasi', 'kategorije', 'komentari', 'curent_user', 'users']),
 
       oglas: function (){
         for (let i = 0; i < this.oglasi.length; i++){
