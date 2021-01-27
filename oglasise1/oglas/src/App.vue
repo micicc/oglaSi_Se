@@ -21,10 +21,12 @@
       zaglavlje
     },
     methods:{
-      ...mapActions(['ucitaj_oglase'])
+      ...mapActions(['load_oglasi','load_kategorije','load_komentari'])
     },
     mounted: function (){
-      this.ucitaj_oglase();
+      this.load_oglasi();
+      this.load_kategorije();
+      this.load_komentari();
     }
   }
 </script>

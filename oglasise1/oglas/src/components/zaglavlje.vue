@@ -1,16 +1,19 @@
 <template>
   <div>
     <div style="background-image: url('https://i.imgur.com/rZQhgGS.png');">
-      <h1 style="text-align:left; color: #e8ce0c; font-size: 450%; padding-left: 20px; padding-top: 100px" > OGLASI SE !!! </h1>
+      <h1 style="text-align:left; color: #e8ce0c; font-size: 450%; padding-left: 20px; padding-top: 100px" > OglaSi_Se </h1>
       <h1 style="text-align:left; color: #e5e1dc; font-size: 180%; padding-left: 20px; padding-bottom: 10px" > Najveća online platforma za oglašavanje uslužnih delatnosti. </h1>
     </div>
 
     <div>
-      <b-navbar toggleable="lg" type="dark"  style="background: #215987">
+      <b-navbar toggleable="lg" type="light"  style="background: #e8ce0c">
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <b-nav-item style="font-size: 120%" href="/">Svi oglasi</b-nav-item>
-            <b-nav-item style="font-size: 120%" href="/" disabled>Disabled</b-nav-item>
+            <b-nav-item style="font-size: 120%;" href="/">
+                <img src="@/assets/repairman.png" width="22" height="22" class="d-inline-block align-top" alt="logo" style="margin-right: 5px"/>
+                <b>Svi oglasi</b>
+            </b-nav-item>
+            <b-nav-item style="font-size: 120%" href="/postavi_oglas" ><b>Postavi oglas</b></b-nav-item>
           </b-navbar-nav>
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">

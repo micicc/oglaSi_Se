@@ -5,9 +5,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    oglasi: []
+    oglasi: [],
+    kategorije: [],
+    komentari: []
   },
   mutations: {
+    /////oglasi///////
     set_oglasi: function (state,oglasi){
       state.oglasi = oglasi;
     },
@@ -33,12 +36,46 @@ export default new Vuex.Store({
           break;
         }
       }
-    }
+    },
+    /////////kategorije///////
+    set_kategorije: function (state,kategorije){
+      state.kategorije = kategorije;
+    },
+
+    ////komentari////
+    set_komentari: function (state,komentari){
+      state.komentari = komentari;
+    },
+    add_komentar: function (state,komentar){
+      state.komentari.push(komentar);
+    },
+    remove_komentar: function (state,id){
+      for(let m = 0; m < state.komentari.length; m++){
+        if(state.komentari[m].id === id){
+          state.komentari.splice(m,1);
+          break;
+        }
+      }
+    },
+    update_komentar: function (state,payload){
+      for(let m = 0; m < state.komentari.length; m++){
+        if(state.komentari[m].id === parseInt(payload.id)){
+          state.komentari[m].ocena = payload.komentar.ocena;
+          state.komentari[m].tekst = payload.komentar.tekst;
+          state.komentari[m].korisnik_id = payload.komentar.korisnik_id;
+          state.komentari[m].oglas_id = payload.komentar.oglas_id;
+          break;
+        }
+      }
+    },
 
   },
+
+
+
   actions: {
-    load_moglasi: function ({commit}){
-      fetch('http://localhost/api/oglasi',{method: "get"}).then((resp)=>{
+    load_oglasi: function ({commit}){
+      fetch('http://localhost/apiO/oglasi',{method: "get"}).then((resp)=>{
         if(!resp.ok)
           throw resp;
         return resp.json();
@@ -54,7 +91,7 @@ export default new Vuex.Store({
       });
     },
     delete_oglas: function({commit},id){
-      fetch(`http://localhost/api/oglas/${id}`, { method: 'delete' }).then((response) => {
+      fetch(`http://localhost/apiO/oglas/${id}`, { method: 'delete' }).then((response) => {
         if (!response.ok)
           throw response;
 
@@ -70,14 +107,13 @@ export default new Vuex.Store({
           alert(error);
       });
     },
-    new_moglas: function ({commit},meteor){
-
-      fetch('http://localhost/api/oglasi', {
+    new_oglas: function ({commit},oglas){
+      fetch('http://localhost/apiO/oglasi', {
         method: 'post',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: meteor
+        body: oglas
       }).then((response) => {
         if (!response.ok)
           throw response;
@@ -95,19 +131,19 @@ export default new Vuex.Store({
 
 
     },
-    change_moglas: function ({commit}, payload) {
-      fetch(`http://localhost/api/oglas/${payload.id}`, {
+    change_oglas: function ({commit}, payload) {
+      fetch(`http://localhost/apiO/oglas/${payload.id}`, {
         method: 'put',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: payload.meteor
+        body: payload.oglas
       }).then((response) => {
         if (!response.ok)
           throw response;
         return response.json();
       }).then((jsonData) => {
-        commit('update_oglas', {id: payload.id, meteor:jsonData});
+        commit('update_oglas', {id: payload.id, oglas:jsonData});
       }).catch((error) => {
         if (typeof error.text === 'function')
           error.text().then((errorMessage) => {
@@ -116,7 +152,107 @@ export default new Vuex.Store({
         else
           alert(error);
       });
-    }
+    },
+    //////kategorije///////
+
+    load_kategorije: function ({commit}){
+      fetch('http://localhost/apiK/kategorije',{method: "get"}).then((resp)=>{
+        if(!resp.ok)
+          throw resp;
+        return resp.json();
+      }).then((jsonData) =>{
+        commit('set_kategorije',jsonData);
+      }).catch((err)=>{
+        if (typeof err.text === 'function')
+          err.text().then((errorMessage) =>{
+            alert(errorMessage);
+          })
+        else
+          alert(err);
+      });
+    },
+
+    /////komentari///
+    load_komentari: function ({commit}){
+      fetch('http://localhost/apiKom/komentari',{method: "get"}).then((resp)=>{
+        if(!resp.ok)
+          throw resp;
+        return resp.json();
+      }).then((jsonData) =>{
+        commit('set_komentari',jsonData);
+      }).catch((err)=>{
+        if (typeof err.text === 'function')
+          err.text().then((errorMessage) =>{
+            alert(errorMessage);
+          })
+        else
+          alert(err);
+      });
+    },
+    delete_komentar: function({commit},id){
+      fetch(`http://localhost/apikom/komentar/${id}`, { method: 'delete' }).then((response) => {
+        if (!response.ok)
+          throw response;
+
+        return response.json()
+      }).then((jsonData) => {
+        commit('remove_komentar', jsonData.id)
+      }).catch((error) => {
+        if (typeof error.text === 'function')
+          error.text().then((errorMessage) => {
+            alert(errorMessage);
+          });
+        else
+          alert(error);
+      });
+    },
+    new_komentar: function ({commit},komentar){
+
+      fetch('http://localhost/apiKom/komentari', {
+        method: 'post',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: komentar
+      }).then((response) => {
+        if (!response.ok)
+          throw response;
+        return response.json();
+      }).then((jsonData) => {
+        commit('add_komentar', jsonData);
+      }).catch((error) => {
+        if (typeof error.text === 'function')
+          error.text().then((errorMessage) => {
+            alert(errorMessage);
+          });
+        else
+          alert(error);
+      });
+
+
+    },
+    change_komentar: function ({commit}, payload) {
+      fetch(`http://localhost/apikom/komentar/${payload.id}`, {
+        method: 'put',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: payload.komentar
+      }).then((response) => {
+        if (!response.ok)
+          throw response;
+        return response.json();
+      }).then((jsonData) => {
+        commit('update_komentar', {id: payload.id, komentar:jsonData});
+      }).catch((error) => {
+        if (typeof error.text === 'function')
+          error.text().then((errorMessage) => {
+            alert(errorMessage);
+          });
+        else
+          alert(error);
+      });
+    },
 
 
   },
