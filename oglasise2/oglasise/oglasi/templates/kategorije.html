@@ -1,39 +1,30 @@
 {%  extends 'master.html' %}
 
 {% block title %}
-   Svi oglasi (home)
+   Kategorije
 {% endblock %}
 
 {%  block content %}
-    <h2>OGLASI </h2>
+    <h2>KATEGORIJE </h2>
     <br>
 
     <div>
-        <h3>Raspodela oglasa po mestima:</h3>
+        <h3>Raspodela oglasa po kategorijama:</h3>
         <canvas id="pie-chart"></canvas>
         <br>
-        <h3>Svi oglasi:</h3>
-        <table class="table table-hover">
+        <h3>Sve kategorije:</h3>
+        <table class="table">
           <thead style="background-color: #215987; color: #e5e1dc">
             <tr>
                 <th scope="col">id</th>
-                <th scope="col">Naslov</th>
-                <th scope="col">Kategorija</th>
-                <th scope="col">Mesto</th>
-                <th scope="col">Datum dodavanja</th>
-                <th scope="col">Korisnik</th>
+                <th scope="col">Naziv</th>
             </tr>
           </thead>
           <tbody>
-            {% for oglas in oglasi %}
+            {% for k in kategorije %}
                 <tr style="transform: rotate(0);">
-                    <td>{{ oglas.id }}</td>
-                    <td>{{ oglas.naslov }}</td>
-                    <td>{{ oglas.kategorija.naziv }}</td>
-                    <td>{{ oglas.mesto }}</td>
-                    <td>{{ oglas.datumDodavanja }}</td>
-                    <td>{{ oglas.korisnik.username }}</td>
-
+                    <td>{{ k.id }}</td>
+                    <td>{{ k.naziv }}</td>
                 </tr>
             {% endfor %}
           </tbody>
@@ -52,7 +43,7 @@
           data: {
             datasets: [{
               data: {{ data|safe }},
-              backgroundColor: ['#32a852', '#a84432', '#3240a8', '#3277a8', '#fcba03','#8403fc', '#fc037f']
+              backgroundColor: ['#32a852', '#a84432', '#3240a8', '#3277a8', '#3240a8']
             }],
             labels: {{ labels|safe }}
           },

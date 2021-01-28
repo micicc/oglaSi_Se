@@ -18,10 +18,13 @@
 </template>
 
 <script>
-import {mapActions} from 'vuex';
+import {mapActions, mapState} from 'vuex';
 import router from "@/router";
 export default {
   name: "unos_komentara",
+  computed: {
+    ...mapState(['curent_user']),
+  },
   props:{
     oglas:{
 
@@ -47,7 +50,7 @@ export default {
   methods:{
     ... mapActions(['new_komentar','change_komentar']),
     addNew:function (){
-      const kom = JSON.stringify({ocena: this.nocena, tekst: this.ntekst, korisnik_id: 1, oglas_id: this.oglas.id});
+      const kom = JSON.stringify({ocena: this.nocena, tekst: this.ntekst, korisnik_id: this.curent_user, oglas_id: this.oglas.id});
       console.log(kom)
         if(this.komentar==null){
           this.new_komentar(kom);

@@ -1,0 +1,75 @@
+{%  extends 'master.html' %}
+
+{% block title %}
+   Kategorije
+{% endblock %}
+
+{%  block content %}
+    <h2>KOMENTARI </h2>
+    <br>
+    <div>
+        <h3>Raspodela broja komentara po oglasima:</h3>
+        <canvas id="population-chart" ></canvas>
+        <br>
+        <h3>Svi komentari:</h3>
+        <table class="table ">
+          <thead style="background-color: #215987; color: #e5e1dc">
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">Oglas</th>
+                <th scope="col">Ocena</th>
+                <th scope="col">Tekst</th>
+                <th scope="col">Korisnik</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            {% for k in komentari %}
+                <tr style="transform: rotate(0);">
+                    <td>{{ k.id }}</td>
+                    <td>{{ k.oglas.naslov }}</td>
+                    <td>{{ k.ocena }}</td>
+                    <td>{{ k.tekst }}</td>
+                    <td>{{ k.korisnik.username }}</td>
+                </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script>
+        let $1 = $(function () {
+            const $populationChart = $("#population-chart");
+            const ctx = $populationChart[0].getContext("2d");
+            new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                      labels: {{ labels|safe }},
+                      datasets: [{
+                        label: 'broj komentara',
+                        backgroundColor: '#037ffc',
+                        data: {{data|safe}}
+                      }]
+                    },
+                    options: {
+                      responsive: true,
+                      legend: {
+                        position: 'top',
+                      },
+                    }
+                  });
+
+
+
+            });
+  </script>
+
+
+
+
+
+
+
+{% endblock %}

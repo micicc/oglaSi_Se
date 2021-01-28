@@ -9,7 +9,7 @@ export default new Vuex.Store({
     kategorije: [],
     komentari: [],
     users: [],
-    curent_user: 1,
+    curent_user: 2,
   },
   mutations: {
     /////oglasi///////
