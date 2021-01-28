@@ -13,6 +13,7 @@
         <canvas id="pie-chart"></canvas>
         <br>
         <h3>Svi oglasi:</h3>
+        <h5>(vidi detalje klikom na oglas)</h5>
         <table class="table table-hover">
           <thead style="background-color: #215987; color: #e5e1dc">
             <tr>
@@ -27,7 +28,7 @@
           <tbody>
             {% for oglas in oglasi %}
                 <tr style="transform: rotate(0);">
-                    <td>{{ oglas.id }}</td>
+                    <th scope="row"><a href="{% url 'oglasi_app:oglas' oglas.id %}" class="stretched-link">{{ oglas.id }}</a></th>
                     <td>{{ oglas.naslov }}</td>
                     <td>{{ oglas.kategorija.naziv }}</td>
                     <td>{{ oglas.mesto }}</td>

@@ -20,17 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6ad48b7-a3b5-4a19-acd4-51e7d4c5f87c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/kategorije.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/komentari.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/korisnici.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/oglas.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/s_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/s_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/s_edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oglas/src/components/unos_komentara.vue" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/components/unos_komentara.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oglas/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oglasise2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/kategorije.html" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/kategorije.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/komentari.html" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/komentari.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/svi_oglasi.html" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/svi_oglasi.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/templates/master.html" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/templates/master.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611609066419</updated>
-      <workItem from="1611609067484" duration="69544000" />
+      <workItem from="1611609067484" duration="71757000" />
     </task>
     <servers />
   </component>

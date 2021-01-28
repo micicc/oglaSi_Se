@@ -9,7 +9,7 @@
     <br>
     <div>
         <h3>Raspodela broja komentara po oglasima:</h3>
-        <canvas id="population-chart" ></canvas>
+        <canvas id="chart" ></canvas>
         <br>
         <h3>Svi komentari:</h3>
         <table class="table ">
@@ -41,7 +41,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
     <script>
         let $1 = $(function () {
-            const $populationChart = $("#population-chart");
+            const $populationChart = $("#chart");
             const ctx = $populationChart[0].getContext("2d");
             new Chart(ctx, {
                     type: 'bar',

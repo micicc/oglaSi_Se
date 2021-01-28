@@ -18,6 +18,7 @@
             <tr>
                 <th scope="col">id</th>
                 <th scope="col">Naziv</th>
+                <th scope="col">Akcije</th>
             </tr>
           </thead>
           <tbody>
@@ -25,11 +26,60 @@
                 <tr style="transform: rotate(0);">
                     <td>{{ k.id }}</td>
                     <td>{{ k.naziv }}</td>
+                     <td>
+                        <a  href="{% url 'oglasi_app:del_kategorija' k.id %}">
+                            <span class="badge badge-danger">Delete</span>
+                        </a>
+                         <a  href="{% url 'oglasi_app:edit_kategorija' k.id%}">
+                            <span class="badge btn-info">Edit</span>
+                        </a>
+                    </td>
                 </tr>
             {% endfor %}
           </tbody>
         </table>
     </div>
+    {% if form.naziv.value is None %}
+    <form method="post"  action="{% url 'oglasi_app:kategorije' %}"   >
+        {% csrf_token %}
+        <h3>Dodaj kategoriju:</h3>
+        <div class="container" style="text-align: center; width: 400px; margin-bottom: 20px" >
+            <label>{{ form.naziv.label_tag }}</label>
+            <input type="text" required class="form-control" id="{{ form.naziv.id_for_label }}" name="{{ form.naziv.name }}" >
+            {% if form.naziv.errors %}
+                <div class="alert alert-danger">
+                    <ul style="text-align: left">
+                        {% for error in form.naziv.errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+            <input type="submit" class="btn btn-primary btn-lg" value="Dodaj" style=" width: 370px; margin-top: 20px"/>
+        </div>
+    </form>
+    {% endif %}
+
+    {% if form.naziv.value is not None %}
+        <form method="post"  action="{% url 'oglasi_app:edit_kategorija' id %}"   >
+        {% csrf_token %}
+        <h3>Dodaj kategoriju:</h3>
+        <div class="container" style="text-align: center; width: 400px; margin-bottom: 20px" >
+            <label>{{ form.naziv.label_tag }}</label>
+            <input type="text" required class="form-control" id="{{ form.naziv.id_for_label }}" name="{{ form.naziv.name }}" value="{{ form.naziv.value }}">
+            {% if form.naziv.errors %}
+                <div class="alert alert-danger">
+                    <ul style="text-align: left">
+                        {% for error in form.naziv.errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+            <input type="submit" class="btn btn-primary btn-lg" value="Sacuvaj" style=" width: 370px; margin-top: 20px"/>
+        </div>
+    </form>
+    {% endif %}
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 

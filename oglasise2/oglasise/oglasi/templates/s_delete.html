@@ -1,0 +1,17 @@
+{%  extends 'master.html' %}
+
+{% block title %}
+    Delete successfully!
+{% endblock %}
+
+{%  block content %}
+    <h3> Kategorija uspešno obrisana </h3>
+    <br>
+    <div>
+        <a href="{% url 'oglasi_app:kategorije'%}">Vrati se na kategorije</a>
+    </div>
+    <div>
+        <a href="{% url 'oglasi_app:svi_oglasi'%}">Vrati se na početnu stranicu</a>
+    </div>
+
+{% endblock %}

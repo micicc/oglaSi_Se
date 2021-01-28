@@ -1,0 +1,88 @@
+{% extends 'master.html' %}
+
+{% block content %}
+    <h2>DETALJI OGLASA </h2>
+    <br>
+    <div class="card">
+        <div class="card-header">
+            <h1>
+                Naslov: {{ oglas.naslov }}
+            </h1>
+        </div>
+        <div class="card-body">
+            <blockquote class="blockquote mb-0" >
+                <p>opis: {{ oglas.opis }}</p>
+                <p>mesto: {{ oglas.mesto }}</p>
+                <p>ukupno komentara: {{ komentari.count }}</p>
+                 {% if komentari.count != 0%}
+                    <p>prosečna ocena: {{ pocena }}</p>
+                {%endif%}
+                <footer class="blockquote-footer">
+                    Korisnik:
+                    <cite title="Source Title">
+                        {{ oglas.korisnik.username }}
+                    </cite>
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+    <br>
+    <div>
+        {% if komentari.count != 0%}
+            <h3>Raspodela ocena:</h3>
+            <canvas id="pie-chart"></canvas>
+        {%endif%}
+        <br>
+        <h3>Komentari:</h3>
+        <table class="table ">
+          <thead style="background-color: #215987; color: #e5e1dc">
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">Oglas</th>
+                <th scope="col">Ocena</th>
+                <th scope="col">Tekst</th>
+                <th scope="col">Korisnik</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for k in komentari %}
+                <tr style="transform: rotate(0);">
+                    <td>{{ k.id }}</td>
+                    <td>{{ k.oglas.naslov }}</td>
+                    <td>{{ k.ocena }}</td>
+                    <td>{{ k.tekst }}</td>
+                    <td>{{ k.korisnik.username }}</td>
+                </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script>
+        kita = function (){
+            return 2
+        }
+        var config = {
+          type: 'pie',
+          data: {
+            datasets: [{
+              data: {{ data|safe }},
+              backgroundColor: ['#32a852', '#a84432', '#3240a8', '#3277a8', '#fcba03','#8403fc', '#fc037f']
+            }],
+            labels: {{ labels|safe }}
+          },
+          options: {
+            responsive: true
+          }
+        };
+
+        window.onload = function() {
+          var ctx = document.getElementById('pie-chart').getContext('2d');
+          window.myPie = new Chart(ctx, config);
+        };
+      </script>
+
+
+{% endblock %}
