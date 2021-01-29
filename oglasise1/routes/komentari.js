@@ -51,8 +51,9 @@ rtr.post('/komentari', ((req, res) => {
     if(error)
         res.status(400).send(error.details[0].message);
     else {
-        let query = 'insert into  oglasi_komentar (ocena, tekst, korisnik_id, oglas_id) values (?,?,?,?)';
-        let formated = mysql.format(query, [req.body.ocena, req.body.tekst,  req.body.korisnik_id, req.body.oglas_id]);
+        let query = 'insert into  oglasi_komentar (ocena, tekst, korisnik_id, oglas_id, datumDodavanja) values (?,?,?,?,?)';
+        var today = new Date();
+        let formated = mysql.format(query, [req.body.ocena, req.body.tekst,  req.body.korisnik_id, req.body.oglas_id, today]);
 
         pool.query(formated, (err,response)=>{
             if(err)
@@ -78,8 +79,9 @@ rtr.put('/komentar/:id', (req, res) => {
     if(error)
         res.status(400).send(error.details[0].message);
     else {
-        let query = 'update  oglasi_komentar set ocena=?, tekst=?, korisnik_id=?, oglas_id=? where id=?';
-        let formated = mysql.format(query, [req.body.ocena, req.body.tekst, req.body.korisnik_id, req.body.oglas_id, req.params.id]);
+        let query = 'update  oglasi_komentar set ocena=?, tekst=?, korisnik_id=?, oglas_id=?, datumIzmene=?, where id=?';
+        var today = new Date();
+        let formated = mysql.format(query, [req.body.ocena, req.body.tekst, req.body.korisnik_id, req.body.oglas_id,today, req.params.id]);
 
         pool.query(formated, (err,response)=>{
             if(err)

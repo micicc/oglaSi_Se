@@ -13,14 +13,14 @@
                 <img src="@/assets/repairman.png" width="22" height="22" class="d-inline-block align-top" alt="logo" style="margin-right: 5px"/>
                 <b>Svi oglasi</b>
             </b-nav-item>
-            <b-nav-item style="font-size: 120%" href="/postavi_oglas" ><b>Postavi oglas</b></b-nav-item>
+            <b-nav-item v-if="curent_user!=null" style="font-size: 120%" href="/postavi_oglas" ><b>Postavi oglas</b></b-nav-item>
             <b-nav-item v-if="curent_user!=null" style="font-size: 120%" href="/moji_oglasi" ><b>Moji oglasi</b></b-nav-item>
           </b-navbar-nav>
-          <!-- Right aligned nav items -->
+
           <b-navbar-nav class="ml-auto">
-
-
-
+            <b-nav-item v-if="curent_user!=null" style="font-size: 120%"  ><b>logout</b></b-nav-item>
+            <b-nav-item v-if="curent_user==null" style="font-size: 120%"  ><b>login</b></b-nav-item>
+            <b-nav-item v-if="curent_user==null" style="font-size: 120%"  ><b>singin</b></b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>

@@ -20,18 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6ad48b7-a3b5-4a19-acd4-51e7d4c5f87c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/korisnici.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/oglas.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/s_add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/s_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/s_edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/app.f33b4cd2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/chunk-vendors.64d43e69.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/repairman.4fe340ef.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/app.9f47bf52.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/app.9f47bf52.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-vendors.d78caa88.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-vendors.d78caa88.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/repairman.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/kategorije.html" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/kategorije.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/komentari.html" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/komentari.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/svi_oglasi.html" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/templates/svi_oglasi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/oglasi/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oglasise2/oglasise/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../oglasise2/oglasise/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oglas/src/components/unos_komentara.vue" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/components/unos_komentara.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oglas/src/components/unos_oglasa.vue" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/components/unos_oglasa.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oglas/src/components/zaglavlje.vue" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/components/zaglavlje.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oglas/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oglas/src/views/IzmeniOglas.vue" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/views/IzmeniOglas.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oglas/src/views/MojiOglasi.vue" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/views/MojiOglasi.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oglas/src/views/Oglas.vue" beforeDir="false" afterPath="$PROJECT_DIR$/oglas/src/views/Oglas.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/komentari.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/komentari.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/oglasi.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/oglasi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,13 +70,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.22" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/oglas/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\oglaSi_Se\oglasise1\dist" />
       <recent name="D:\oglaSi_Se\oglasise1\oglas\src\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -84,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611609066419</updated>
-      <workItem from="1611609067484" duration="71757000" />
+      <workItem from="1611609067484" duration="81565000" />
     </task>
     <servers />
   </component>
@@ -143,6 +151,18 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1785" y="-12" width="1350" height="841" maximized="true" key="dock-window-4/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611777012977" />
+    <state x="-1518" y="75" width="1350" height="841" key="dock-window-5" timestamp="1611876593321">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1518" y="75" width="1350" height="841" key="dock-window-5/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611876593321" />
+    <state x="244" y="155" width="1350" height="841" key="dock-window-6" timestamp="1611877069861">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="244" y="155" width="1350" height="841" key="dock-window-6/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611877069861" />
+    <state x="-1602" y="63" width="1350" height="841" key="dock-window-7" timestamp="1611877069861">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1602" y="63" width="1350" height="841" key="dock-window-7/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611877069861" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1611711601306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

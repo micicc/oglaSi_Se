@@ -31,7 +31,7 @@
                 <b-btn  variant="warning" @click="edit(oglas)" block>Edit</b-btn>
               </b-row>
               <b-row>
-                <b-button  variant="dark" @click="delete_oglas(oglas.id)" block>Delete</b-button>
+                <b-button  variant="dark" @click="del(oglas)" block>Delete</b-button>
               </b-row>
 
             </b-col>
@@ -53,7 +53,7 @@
   export default {
     name: "MojiOglasi",
     computed:{
-      ...mapState(['oglasi', 'kategorije', 'curent_user' ])
+      ...mapState(['oglasi', 'kategorije', 'curent_user', 'komentari' ])
     },
     data(){
       return{
@@ -61,14 +61,22 @@
       }
     },
     methods:{
-      ...mapActions(['delete_oglas']),
+      ...mapActions(['delete_oglas', 'delete_komentar','load_komentari']),
       detalji: function (item) {
         router.push({path: `/oglas/${item.id}`})
       },
       edit: function (item) {
         router.push({path: `/edit_oglas/${item.id}`})
+      },
+      del: function (item) {
+        var a = this.komentari.filter(el => el.oglas_id == item.id );
+        for ( const i in a){
+          console.log(a[i].id)
+          this.delete_komentar(a[i].id)
+        }
+        this.load_komentari();
+        this.delete_oglas(item.id)
       }
-
     }
 
 

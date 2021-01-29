@@ -9,7 +9,7 @@ export default new Vuex.Store({
     kategorije: [],
     komentari: [],
     users: [],
-    curent_user: 2,
+    curent_user: 3,
   },
   mutations: {
     /////oglasi///////
@@ -100,6 +100,7 @@ export default new Vuex.Store({
       });
     },
     delete_oglas: function({commit},id){
+
       fetch(`http://localhost/apiO/oglas/${id}`, { method: 'delete' }).then((response) => {
         if (!response.ok)
           throw response;

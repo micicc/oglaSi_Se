@@ -51,8 +51,9 @@ rtr.post('/oglasi', ((req, res) => {
     if(error)
         res.status(400).send(error.details[0].message);
     else {
-        let query = 'insert into  oglasi_oglas (naslov, opis, mesto,kategorija_id, korisnik_id) values (?,?,?,?,?)';
-        let formated = mysql.format(query, [req.body.naslov, req.body.opis, req.body.mesto, req.body.kategorija_id, req.body.korisnik_id]);
+        let query = 'insert into  oglasi_oglas (naslov, opis, mesto,kategorija_id, korisnik_id, datumDodavanja) values (?,?,?,?,?,?)';
+        var today = new Date();
+        let formated = mysql.format(query, [req.body.naslov, req.body.opis, req.body.mesto, req.body.kategorija_id, req.body.korisnik_id, today]);
 
         pool.query(formated, (err,response)=>{
             if(err)
@@ -78,8 +79,9 @@ rtr.put('/oglas/:id', (req, res) => {
     if(error)
         res.status(400).send(error.details[0].message);
     else {
-        let query = 'update  oglasi_oglas set naslov=?, opis=?, mesto=?, kategorija_id=?, korisnik_id=? where id=?';
-        let formated = mysql.format(query, [req.body.naslov, req.body.opis, req.body.mesto, req.body.kategorija_id, req.body.korisnik_id, req.params.id]);
+        let query = 'update  oglasi_oglas set naslov=?, opis=?, mesto=?, kategorija_id=?, korisnik_id=?, datumIzmene=? where id=?';
+        var today = new Date();
+        let formated = mysql.format(query, [req.body.naslov, req.body.opis, req.body.mesto, req.body.kategorija_id, req.body.korisnik_id,today, req.params.id]);
 
         pool.query(formated, (err,response)=>{
             if(err)

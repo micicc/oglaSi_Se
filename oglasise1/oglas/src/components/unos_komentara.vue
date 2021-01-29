@@ -20,6 +20,16 @@
 <script>
 import {mapActions, mapState} from 'vuex';
 import router from "@/router";
+const Joi = require('@hapi/joi');
+
+const semaO = Joi.object().keys( {
+  ocena: Joi.number().required().min(1).max(5),
+  tekst: Joi.string().required().trim().max(120),
+  korisnik_id: Joi.number().required(),
+  oglas_id: Joi.number().required(),
+
+});
+
 export default {
   name: "unos_komentara",
   computed: {
@@ -52,14 +62,19 @@ export default {
     addNew:function (){
       const kom = JSON.stringify({ocena: this.nocena, tekst: this.ntekst, korisnik_id: this.curent_user, oglas_id: this.oglas.id});
       console.log(kom)
-        if(this.komentar==null){
-          this.new_komentar(kom);
+      Joi.validate(kom, semaO, (err) => {
+        if (err) {
+          alert("fron validation: " + err.details[0].message);
+        } else {
+          if(this.komentar==null){
+            this.new_komentar(kom);
+          }
+          else {
+            this.change_komentar({id: this.$route.params.id, komentar: kom});
+            router.push({path: `/`})
+          }
         }
-        else {
-          this.change_komentar({id: this.$route.params.id, komentar: kom});
-          router.push({path: `/`})
-        }
-
+      });
 
       this.nocena = null;
       this.ntekst = "";
